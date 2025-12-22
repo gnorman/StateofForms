@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+databases[postgresql]
+asyncpg
+sqlalchemy
+psycopg2-binary
+python-dotenv
+openbb
+pandas
+redis[asyncio]

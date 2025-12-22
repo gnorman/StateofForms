@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  queryforge-backend:
+    build:
+      context: ./queryforge-backend
+      dockerfile: Dockerfile
+    container_name: queryforge_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./queryforge-backend:/app
+    env_file:
+      - ./queryforge-backend/.env
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - postgres
+
+  queryforge-frontend:
+    build:
+      context: ./queryforge-frontend
+      dockerfile: Dockerfile
+    container_name: queryforge_frontend
+    restart: unless-stopped
+    ports:
+      - "8001:8000"  # Avoid conflict with backend
+    volumes:
+      - ./queryforge-frontend:/app
+    env_file:
+      - ./queryforge-frontend/.env
+    environment:
+      - BACKEND_URL=http://queryforge_backend:8000
+    depends_on:
+      - queryforge-backend
+      - postgres
+
+  openbb:
+    build:
+      context: ./openbb
+      dockerfile: Dockerfile
+    container_name: openbb_terminal
+    restart: unless-stopped
+    volumes:
+      - ./openbb:/openbb
+    tty: true
+    stdin_open: true
+
+  postgres:
+    image: postgres:15
+    container_name: queryforge_postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: queryforge
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: queryforge_db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: queryforge_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+
+volumes:
+  pgdata:
+  redisdata:
