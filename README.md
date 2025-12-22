@@ -90,7 +90,7 @@ try:
         host='localhost',
         database='queryforge_db',
         user='queryforge',
-        password='secretpassword',
+        
         port='5432'
     )
     cursor = conn.cursor()
