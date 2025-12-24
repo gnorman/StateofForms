@@ -18,7 +18,7 @@
 | Database | Status | Details |
 |----------|---------|---------|
 | **PostgreSQL** | 🟢 **SUCCESS** | `localhost:5432` - Connected as 'queryforge' |
-| **SQL Server** | 🟢 **SUCCESS** | `SOFDEV` - Connected as 'sa' with 17 databases |
+| **SQL Server** | 🟢 **SUCCESS** | `` - Connected as 'sa' with 17 databases |
 
 ### 🌐 API Endpoints
 
@@ -239,7 +239,7 @@ $(docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}')
 
 🔌 DATABASE CONNECTIONS:
 ✅ PostgreSQL (localhost:5432) - Connected as 'queryforge'
-✅ SQL Server (SOFDEV) - Connected as 'sa' with 17 databases
+✅ SQL Server (XXXXXX) - Connected as 'sa' with 17 databases
 
 🌐 API ENDPOINTS:
 ✅ Backend (localhost:8000) - FastAPI with 6 endpoints
@@ -279,7 +279,7 @@ $(docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}')
 
 2. **🔗 Database Connectivity**: Both databases fully accessible
    - 🟢 **PostgreSQL**: Local container with proper credentials
-   - 🟢 **SQL Server**: Remote SOFDEV server with 17 user databases
+   - 🟢 **SQL Server**: Remote XXXX server with 17 user databases
 
 3. **🌐 API Services**: All endpoints functional
    - ✅ `/ping-db` - Database health check
