@@ -1,0 +1,122 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home" description="State of Forms - Transform Data Into Decisions. Data Analytics & Engineering Solutions">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Transform Data Into Decisions</h1>
+      <p>Data Analytics & Engineering Solutions for Modern Business</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/portfolio" class="btn btn-primary">View Our Work</a>
+        <a href="/contact" class="btn btn-secondary">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Our Services</h2>
+      <p class="text-center" style="max-width: 600px; margin: 0 auto 3rem;">
+        From data engineering to business intelligence, we deliver end-to-end solutions that drive results.
+      </p>
+      
+      <div class="card-grid">
+        <div class="card">
+          <h3>📊 Data Analytics & Reporting</h3>
+          <p>Transform raw data into actionable insights with Python, R, and advanced statistical analysis.</p>
+          <a href="/services#analytics">Learn more →</a>
+        </div>
+
+        <div class="card">
+          <h3>🔧 Data Pipeline Engineering</h3>
+          <p>Build robust ETL/ELT pipelines with Hadoop, Spark, and modern data lake architecture.</p>
+          <a href="/services#engineering">Learn more →</a>
+        </div>
+
+        <div class="card">
+          <h3>💼 Business Intelligence</h3>
+          <p>Create powerful dashboards and visualizations with Power BI and custom solutions.</p>
+          <a href="/services#bi">Learn more →</a>
+        </div>
+
+        <div class="card">
+          <h3>🚀 Custom Development</h3>
+          <p>Full-stack solutions using Django, FastAPI, React, and PostgreSQL.</p>
+          <a href="/services#development">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QueryForge Showcase Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">Featured: QueryForge Platform</h2>
+      <p class="text-center" style="max-width: 700px; margin: 0 auto 2rem;">
+        Our flagship analytics platform showcasing real-time financial data visualization and analysis.
+      </p>
+      
+      <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h3>Live Financial Data Analytics</h3>
+        <p>Powered by OpenBB API • Django • FastAPI • PostgreSQL • Redis</p>
+        
+        <!-- Placeholder for React component -->
+        <div style="background: #f3f4f6; padding: 3rem; border-radius: 0.5rem; margin: 2rem 0;">
+          <p style="color: #6b7280;">📈 Live Stock & Crypto Charts Will Display Here</p>
+          <p style="font-size: 0.875rem; color: #9ca3af;">(React component to be integrated)</p>
+        </div>
+        
+        <div style="margin-top: 2rem;">
+          <a href="https://queryforge.ai" target="_blank" rel="noopener" class="btn btn-primary">
+            Visit QueryForge.ai →
+          </a>
+          <a href="/portfolio" class="btn btn-secondary" style="margin-left: 1rem;">
+            See More Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Why State of Forms?</h2>
+      <div class="card-grid" style="margin-top: 3rem;">
+        <div class="card text-center">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚡</div>
+          <h3>Production Ready</h3>
+          <p>Enterprise-grade solutions with CI/CD pipelines, unit testing, and comprehensive documentation.</p>
+        </div>
+
+        <div class="card text-center">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛠️</div>
+          <h3>Modern Tech Stack</h3>
+          <p>Django, FastAPI, React, PostgreSQL, Redis, Hadoop, Spark - industry-leading technologies.</p>
+        </div>
+
+        <div class="card text-center">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">📈</div>
+          <h3>Proven Experience</h3>
+          <p>Years of monitoring data, real-world deployments, and successful analytics implementations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-alt">
+    <div class="container text-center">
+      <h2>Ready to Unlock Your Data?</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        Let's discuss how we can transform your data into actionable business insights.
+      </p>
+      <a href="/contact" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+</Layout>

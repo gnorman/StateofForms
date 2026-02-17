@@ -1,0 +1,230 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Services" description="Data Analytics, Engineering, and Business Intelligence Services">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Comprehensive data solutions tailored to your business needs</p>
+    </div>
+  </section>
+
+  <!-- Data Analytics Section -->
+  <section class="section" id="analytics">
+    <div class="container">
+      <h2>📊 Data Analytics & Reporting</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        Transform raw data into actionable insights that drive business decisions.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Statistical Analysis</h3>
+          <p>Advanced analytics using Python, R, and modern statistical methods to uncover patterns and trends in your data.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>Descriptive and inferential statistics</li>
+            <li>Predictive modeling</li>
+            <li>Time series analysis</li>
+            <li>A/B testing and experimentation</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Power BI Dashboards</h3>
+          <p>Interactive dashboards and reports that provide real-time visibility into your key metrics.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>Custom dashboard design</li>
+            <li>Data modeling & DAX</li>
+            <li>Automated reporting</li>
+            <li>Mobile-optimized views</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Custom Visualizations</h3>
+          <p>Bespoke data visualizations using modern frameworks and libraries.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>Interactive charts with D3.js</li>
+            <li>Real-time data streaming</li>
+            <li>Geospatial visualizations</li>
+            <li>Custom React components</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Engineering Section -->
+  <section class="section section-alt" id="engineering">
+    <div class="container">
+      <h2>🔧 Data Pipeline Engineering</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        Build scalable, reliable data infrastructure that grows with your business.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>ETL/ELT Pipelines</h3>
+          <p>Robust data pipelines for extracting, transforming, and loading data at scale.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>Python-based data processing</li>
+            <li>Apache Spark for big data</li>
+            <li>Data quality validation</li>
+            <li>Unit testing & CI/CD</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Data Lake Architecture</h3>
+          <p>Design and implement modern data lake solutions using QueryLane and Hadoop ecosystem.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>Hadoop/Hive/Spark setup</li>
+            <li>Data ingestion strategies</li>
+            <li>Schema management</li>
+            <li>Performance optimization</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Data Warehouse Solutions</h3>
+          <p>Optimized data warehouses for analytics and reporting workloads.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>PostgreSQL optimization</li>
+            <li>Star/snowflake schemas</li>
+            <li>Query performance tuning</li>
+            <li>Incremental data loading</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Intelligence Section -->
+  <section class="section" id="bi">
+    <div class="container">
+      <h2>💼 Business Intelligence Solutions</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        Empower your team with self-service analytics and actionable insights.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>QueryForge Platform</h3>
+          <p>Our flagship analytics platform for financial data and monitoring insights.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>Real-time financial data (OpenBB API)</li>
+            <li>Stock & crypto analytics</li>
+            <li>Custom dashboard builder</li>
+            <li>API access for integration</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Monitoring & Alerting</h3>
+          <p>Proactive monitoring systems with intelligent alerting based on years of monitoring data expertise.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>Real-time metrics tracking</li>
+            <li>Automated alert systems</li>
+            <li>Anomaly detection</li>
+            <li>Historical trend analysis</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Custom BI Platforms</h3>
+          <p>Build your own analytics platform tailored to your specific business requirements.</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+            <li>Full-stack development</li>
+            <li>Role-based access control</li>
+            <li>Embedded analytics</li>
+            <li>White-label solutions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Development Section -->
+  <section class="section section-alt" id="development">
+    <div class="container">
+      <h2>🚀 Custom Application Development</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        Full-stack solutions using modern, production-ready technologies.
+      </p>
+
+      <div class="card" style="max-width: 900px; margin: 0 auto;">
+        <h3>Technology Stack</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+          <div>
+            <h4 style="color: #2563eb; margin-bottom: 0.5rem;">Backend</h4>
+            <ul style="padding-left: 1.5rem;">
+              <li>Django (Python)</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Redis (caching)</li>
+              <li>RESTful APIs</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #2563eb; margin-bottom: 0.5rem;">Frontend</h4>
+            <ul style="padding-left: 1.5rem;">
+              <li>React</li>
+              <li>Astro</li>
+              <li>Modern JavaScript/TypeScript</li>
+              <li>Responsive design</li>
+              <li>Progressive Web Apps</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #2563eb; margin-bottom: 0.5rem;">Big Data</h4>
+            <ul style="padding-left: 1.5rem;">
+              <li>Apache Hadoop</li>
+              <li>Apache Hive</li>
+              <li>Apache Spark</li>
+              <li>Distributed computing</li>
+              <li>Data lakes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <h3>Best Practices We Follow</h3>
+        <div class="card-grid" style="margin-top: 2rem;">
+          <div class="card">
+            <h4>✓ Unit Testing</h4>
+            <p>Comprehensive test coverage for reliability</p>
+          </div>
+          <div class="card">
+            <h4>✓ CI/CD Pipelines</h4>
+            <p>Automated deployment workflows</p>
+          </div>
+          <div class="card">
+            <h4>✓ Documentation</h4>
+            <p>Clear, maintainable codebases</p>
+          </div>
+          <div class="card">
+            <h4>✓ Cloud Ready</h4>
+            <p>Scalable infrastructure design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>Let's Build Something Amazing</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        Ready to discuss your data challenges? We're here to help.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/contact" class="btn btn-primary">Get in Touch</a>
+        <a href="/portfolio" class="btn btn-secondary">View Our Work</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,242 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact" description="Get in touch with State of Forms for data analytics and engineering solutions">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Let's discuss how we can help transform your data</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+        <!-- Contact Form -->
+        <div>
+          <h2>Send Us a Message</h2>
+          <p style="margin-bottom: 2rem;">
+            Fill out the form below and we'll get back to you within 24 hours.
+          </p>
+
+          <form action="#" method="POST" style="max-width: 500px;">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                placeholder="Your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input 
+                type="text" 
+                id="company" 
+                name="company" 
+                placeholder="Your company name (optional)"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="analytics">Data Analytics & Reporting</option>
+                <option value="engineering">Data Pipeline Engineering</option>
+                <option value="bi">Business Intelligence</option>
+                <option value="custom">Custom Development</option>
+                <option value="consulting">Consulting</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range (optional)...</option>
+                <option value="small">Under $10,000</option>
+                <option value="medium">$10,000 - $50,000</option>
+                <option value="large">$50,000 - $100,000</option>
+                <option value="enterprise">$100,000+</option>
+                <option value="discuss">Prefer to discuss</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Description *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                required 
+                placeholder="Tell us about your project and what you're looking to accomplish..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" style="width: 100%; cursor: pointer;">
+                Send Message
+              </button>
+            </div>
+
+            <p style="font-size: 0.875rem; color: #6b7280; margin-top: 1rem;">
+              * Required fields
+            </p>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <div class="card">
+            <h3>Contact Information</h3>
+            <p style="margin-bottom: 2rem;">
+              We're here to help you unlock the potential of your data.
+            </p>
+
+            <div style="margin-bottom: 1.5rem;">
+              <h4 style="color: #2563eb; margin-bottom: 0.5rem;">📧 Email</h4>
+              <p style="margin: 0;">
+                <a href="mailto:info@stateofforms.com" style="color: #1f2937;">
+                  info@stateofforms.com
+                </a>
+              </p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <h4 style="color: #2563eb; margin-bottom: 0.5rem;">⏱️ Response Time</h4>
+              <p style="margin: 0;">We typically respond within 24 hours on business days</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <h4 style="color: #2563eb; margin-bottom: 0.5rem;">🔗 Connect With Us</h4>
+              <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                <a href="#" target="_blank" rel="noopener" class="btn btn-secondary" style="text-decoration: none;">
+                  LinkedIn
+                </a>
+                <a href="#" target="_blank" rel="noopener" class="btn btn-secondary" style="text-decoration: none;">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top: 2rem; background: #f9fafb;">
+            <h3>What Happens Next?</h3>
+            <ol style="padding-left: 1.5rem;">
+              <li style="margin-bottom: 0.75rem;">
+                <strong>We'll review your inquiry</strong> and respond within 24 hours
+              </li>
+              <li style="margin-bottom: 0.75rem;">
+                <strong>Schedule a consultation</strong> to discuss your needs in detail
+              </li>
+              <li style="margin-bottom: 0.75rem;">
+                <strong>Receive a proposal</strong> outlining our approach and timeline
+              </li>
+              <li style="margin-bottom: 0.75rem;">
+                <strong>Start building</strong> your data solution together
+              </li>
+            </ol>
+          </div>
+
+          <div class="card" style="margin-top: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+            <h3 style="color: white;">Featured Platform</h3>
+            <p style="color: rgba(255, 255, 255, 0.9);">
+              Check out QueryForge, our production analytics platform showcasing 
+              real-time financial data visualization.
+            </p>
+            <a 
+              href="https://queryforge.ai" 
+              target="_blank" 
+              rel="noopener" 
+              class="btn btn-secondary" 
+              style="margin-top: 1rem; display: inline-block; background: white; color: #667eea;"
+            >
+              Visit QueryForge →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">Frequently Asked Questions</h2>
+      
+      <div style="max-width: 800px; margin: 3rem auto 0;">
+        <div class="card">
+          <h3>What types of projects do you take on?</h3>
+          <p>
+            We work on data analytics, engineering, and business intelligence projects of all sizes. 
+            From custom dashboard development to complete analytics platform builds, we tailor our 
+            services to your specific needs.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top: 1.5rem;">
+          <h3>What is your typical project timeline?</h3>
+          <p>
+            Project timelines vary based on scope and complexity. Small projects might take 2-4 weeks, 
+            while larger platforms could take 2-6 months. We'll provide a detailed timeline estimate 
+            during our initial consultation.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top: 1.5rem;">
+          <h3>Do you offer ongoing support and maintenance?</h3>
+          <p>
+            Yes! We provide post-launch support, maintenance packages, and can help scale your 
+            solution as your needs grow. We believe in building long-term partnerships with our clients.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top: 1.5rem;">
+          <h3>Can you integrate with our existing systems?</h3>
+          <p>
+            Absolutely. We have experience integrating with various databases, APIs, and third-party 
+            services. We'll work with your existing infrastructure to deliver seamless solutions.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top: 1.5rem;">
+          <h3>Do you sign NDAs and work under confidentiality agreements?</h3>
+          <p>
+            Yes, we're happy to sign NDAs and work under your confidentiality requirements. 
+            We take data security and client privacy very seriously.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>Ready to Get Started?</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        The first step is simple - just fill out the form above or send us an email.
+      </p>
+      <p style="color: #6b7280;">
+        No sales pressure. Just a genuine conversation about your data needs.
+      </p>
+    </div>
+  </section>
+</Layout>

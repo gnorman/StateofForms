@@ -1,0 +1,156 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>State of Forms</h3>
+        <p>Data Analytics & Engineering Solutions</p>
+        <p class="tagline">Transform Data Into Decisions</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/solutions">Solutions</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="https://queryforge.ai" target="_blank" rel="noopener">QueryForge.ai</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {currentYear} State of Forms. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #1f2937;
+    color: #e5e7eb;
+    padding: 3rem 2rem 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  .footer-section h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .footer-section p {
+    color: #9ca3af;
+    margin: 0.5rem 0;
+  }
+
+  .tagline {
+    font-style: italic;
+    color: #6b7280;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-section a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-section a:hover {
+    color: #60a5fa;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    color: #9ca3af;
+  }
+
+  .footer-legal {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .footer-legal a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+
+  .footer-legal a:hover {
+    color: #60a5fa;
+  }
+
+  .footer-legal span {
+    color: #4b5563;
+  }
+
+  @media (max-width: 768px) {
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

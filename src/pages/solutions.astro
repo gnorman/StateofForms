@@ -1,0 +1,239 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Solutions" description="Industry-specific data solutions for financial services, operations monitoring, and custom analytics">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Industry Solutions</h1>
+      <p>Targeted data solutions for specific business challenges</p>
+    </div>
+  </section>
+
+  <!-- Financial Services Solution -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+          <h2>📈 Financial Services Analytics</h2>
+          <p style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+            Real-time market data analysis and visualization for informed investment decisions.
+          </p>
+          
+          <h3>The Challenge</h3>
+          <p>Financial professionals need instant access to market data, historical trends, and analytical tools to make data-driven investment decisions.</p>
+          
+          <h3>Our Solution</h3>
+          <p>QueryForge platform integrates with OpenBB API to deliver:</p>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+            <li>Real-time stock and cryptocurrency quotes</li>
+            <li>Interactive charting with multiple visualization types</li>
+            <li>JSON API for programmatic access</li>
+            <li>Historical data analysis and trends</li>
+          </ul>
+          
+          <h3>Technologies Used</h3>
+          <p style="color: #6b7280;">Django • FastAPI • PostgreSQL • Redis • OpenBB API • React</p>
+          
+          <div style="margin-top: 2rem;">
+            <a href="https://queryforge.ai" target="_blank" rel="noopener" class="btn btn-primary">Visit QueryForge →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h3>Results & Benefits</h3>
+          <ul style="padding-left: 1.5rem;">
+            <li>▸ Real-time market insights</li>
+            <li>▸ Multiple chart types for analysis</li>
+            <li>▸ RESTful API for integrations</li>
+            <li>▸ Fast, cached responses with Redis</li>
+            <li>▸ Production-ready with CI/CD</li>
+          </ul>
+          
+          <div style="background: #f3f4f6; padding: 2rem; border-radius: 0.5rem; margin-top: 1.5rem;">
+            <p style="text-align: center; color: #6b7280;">📊 Live Chart Demo</p>
+            <p style="text-align: center; font-size: 0.875rem; color: #9ca3af;">(React component)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Operations Monitoring Solution -->
+  <section class="section section-alt">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div class="card">
+          <h3>Key Features</h3>
+          <ul style="padding-left: 1.5rem;">
+            <li>▸ Multi-year historical analysis</li>
+            <li>▸ Anomaly detection algorithms</li>
+            <li>▸ Custom alerting rules</li>
+            <li>▸ Trend forecasting</li>
+            <li>▸ Performance dashboards</li>
+          </ul>
+          
+          <div style="background: #f3f4f6; padding: 2rem; border-radius: 0.5rem; margin-top: 1.5rem;">
+            <p style="text-align: center; color: #6b7280;">📈 Monitoring Dashboard</p>
+            <p style="text-align: center; font-size: 0.875rem; color: #9ca3af;">(Visualization preview)</p>
+          </div>
+        </div>
+        
+        <div>
+          <h2>🔍 Operations Monitoring & Analytics</h2>
+          <p style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+            Transform years of monitoring data into actionable operational insights.
+          </p>
+          
+          <h3>The Challenge</h3>
+          <p>Organizations accumulate vast amounts of monitoring data but struggle to extract meaningful patterns and predict potential issues before they occur.</p>
+          
+          <h3>Our Solution</h3>
+          <p>Leveraging our experience with years of monitoring data:</p>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+            <li>Historical trend analysis and pattern recognition</li>
+            <li>Predictive analytics for proactive monitoring</li>
+            <li>Custom Python-based data cleaning pipelines</li>
+            <li>Automated reporting and alerting systems</li>
+          </ul>
+          
+          <h3>Technologies Used</h3>
+          <p style="color: #6b7280;">Python • Pandas • Scikit-learn • PostgreSQL • Power BI • Unit Testing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Migration Solution -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+          <h2>🚀 Data Lake to Warehouse Pipeline</h2>
+          <p style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+            Efficient data movement from raw storage to analytics-ready formats.
+          </p>
+          
+          <h3>The Challenge</h3>
+          <p>Organizations need to process and transform massive datasets from data lakes into structured formats optimized for analytics and reporting.</p>
+          
+          <h3>Our Solution</h3>
+          <p>QueryLane platform provides:</p>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+            <li>Hadoop/Hive/Spark ecosystem for big data processing</li>
+            <li>Scalable ETL pipelines with data validation</li>
+            <li>Schema evolution and versioning</li>
+            <li>Incremental data loading strategies</li>
+          </ul>
+          
+          <h3>Technologies Used</h3>
+          <p style="color: #6b7280;">Apache Hadoop • Apache Hive • Apache Spark • Python • PostgreSQL</p>
+          
+          <div style="margin-top: 2rem;">
+            <a href="/contact" class="btn btn-primary">Discuss Your Project →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h3>Pipeline Architecture</h3>
+          <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; font-family: monospace; font-size: 0.875rem;">
+            <div style="margin-bottom: 1rem;">
+              <strong>Data Lake (QueryLane)</strong><br/>
+              ↓ Extract & Validate<br/>
+            </div>
+            <div style="margin-bottom: 1rem;">
+              <strong>Spark Processing</strong><br/>
+              ↓ Transform & Clean<br/>
+            </div>
+            <div style="margin-bottom: 1rem;">
+              <strong>Data Warehouse</strong><br/>
+              ↓ Load & Optimize<br/>
+            </div>
+            <div>
+              <strong>Analytics Tools</strong><br/>
+              (QueryForge, Power BI, Python/R)
+            </div>
+          </div>
+          
+          <h4 style="margin-top: 1.5rem;">Benefits</h4>
+          <ul style="padding-left: 1.5rem;">
+            <li>▸ Scalable to petabyte-scale data</li>
+            <li>▸ Data quality assurance built-in</li>
+            <li>▸ Fast query performance</li>
+            <li>▸ Cost-optimized storage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Analytics Platform Solution -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">🎯 Custom Analytics Platforms</h2>
+      <p class="text-center" style="font-size: 1.125rem; max-width: 700px; margin: 0 auto 3rem;">
+        Build your own branded analytics solution powered by proven technology.
+      </p>
+      
+      <div class="card-grid">
+        <div class="card">
+          <h3>Full-Stack Development</h3>
+          <p>End-to-end platform development using:</p>
+          <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+            <li>Django frontend framework</li>
+            <li>FastAPI for high-performance APIs</li>
+            <li>React for interactive components</li>
+            <li>PostgreSQL with optimization</li>
+            <li>Redis for caching & sessions</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Integration Ready</h3>
+          <p>Connect to your existing systems:</p>
+          <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+            <li>RESTful API endpoints</li>
+            <li>External API integrations</li>
+            <li>Database connections</li>
+            <li>Authentication systems</li>
+            <li>Third-party services</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Production Quality</h3>
+          <p>Enterprise-grade standards:</p>
+          <ul style="padding-left: 1.5rem; margin-top: 1rem;">
+            <li>Comprehensive unit testing</li>
+            <li>CI/CD pipelines (GitHub Actions)</li>
+            <li>Documentation & code comments</li>
+            <li>Scalable architecture</li>
+            <li>Security best practices</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="max-width: 800px; margin: 3rem auto 0; text-align: center;">
+        <h3>QueryForge: A Case Study</h3>
+        <p>See how we built a complete analytics platform from the ground up.</p>
+        <div style="margin: 2rem 0;">
+          <a href="/portfolio" class="btn btn-primary">View Case Study →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>Have a Unique Challenge?</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        Let's discuss how our solutions can be tailored to your specific needs.
+      </p>
+      <a href="/contact" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">
+        Schedule a Consultation
+      </a>
+    </div>
+  </section>
+</Layout>

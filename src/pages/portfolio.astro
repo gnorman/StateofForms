@@ -1,0 +1,252 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Portfolio" description="Our data analytics and engineering projects featuring QueryForge, QueryLane, and custom solutions">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Our Work</h1>
+      <p>Production-ready solutions demonstrating our expertise</p>
+    </div>
+  </section>
+
+  <!-- QueryForge Featured Project -->
+  <section class="section">
+    <div class="container">
+      <div class="card" style="max-width: 1000px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <div style="text-align: center;">
+          <span style="background: rgba(255, 255, 255, 0.2); padding: 0.25rem 1rem; border-radius: 1rem; font-size: 0.875rem; font-weight: 600;">
+            ⭐ FEATURED PROJECT
+          </span>
+          <h2 style="color: white; margin-top: 1rem;">QueryForge Analytics Platform</h2>
+          <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.125rem;">
+            Full-stack financial data analytics platform with real-time market insights
+          </p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+        <div class="card">
+          <h3>Project Overview</h3>
+          <p>
+            QueryForge is a production-ready analytics platform designed for financial data analysis. 
+            It integrates with the OpenBB API to deliver real-time stock and cryptocurrency data, 
+            complete with interactive visualizations and programmatic API access.
+          </p>
+          
+          <h4 style="margin-top: 1.5rem;">Key Features</h4>
+          <ul style="padding-left: 1.5rem;">
+            <li>Real-time stock and crypto quotes</li>
+            <li>Multiple chart types (line, bar, candlestick)</li>
+            <li>JSON API responses for integrations</li>
+            <li>Redis caching for optimal performance</li>
+            <li>Responsive web interface</li>
+            <li>RESTful API architecture</li>
+          </ul>
+
+          <div style="margin-top: 2rem;">
+            <a href="https://queryforge.ai" target="_blank" rel="noopener" class="btn btn-primary">
+              Visit Live Site →
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Technical Stack</h3>
+          
+          <h4 style="color: #2563eb; margin-top: 1rem;">Frontend</h4>
+          <p style="color: #6b7280;">Django Templates, React Components, Modern CSS</p>
+          
+          <h4 style="color: #2563eb; margin-top: 1rem;">Backend</h4>
+          <p style="color: #6b7280;">Django, FastAPI, PostgreSQL, Redis</p>
+          
+          <h4 style="color: #2563eb; margin-top: 1rem;">External APIs</h4>
+          <p style="color: #6b7280;">OpenBB Financial Data API</p>
+          
+          <h4 style="color: #2563eb; margin-top: 1rem;">DevOps</h4>
+          <p style="color: #6b7280;">GitHub Actions (CI/CD), Postman (API Testing), Unit Tests</p>
+          
+          <h4 style="color: #2563eb; margin-top: 1rem;">Deployment</h4>
+          <p style="color: #6b7280;">DigitalOcean, Production-ready configuration</p>
+        </div>
+      </div>
+
+      <!-- Live Demo Section -->
+      <div class="card" style="margin-top: 2rem; text-align: center;">
+        <h3>Live Financial Data Demo</h3>
+        <p>See QueryForge in action with real-time market data</p>
+        
+        <div style="background: #f3f4f6; padding: 4rem; border-radius: 0.5rem; margin: 2rem 0;">
+          <p style="color: #6b7280; font-size: 1.25rem;">📈 Interactive Stock & Crypto Charts</p>
+          <p style="font-size: 0.875rem; color: #9ca3af; margin-top: 1rem;">
+            React component with live data will be integrated here
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QueryLane Project -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">QueryLane Data Platform</h2>
+      <p class="text-center" style="max-width: 700px; margin: 0 auto 3rem;">
+        Big data processing platform built on the Hadoop ecosystem
+      </p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div class="card">
+          <h3>🏗️ Project Description</h3>
+          <p>
+            QueryLane is a comprehensive data lake solution designed for large-scale data ingestion, 
+            processing, and storage. Built on the Hadoop/Hive/Spark ecosystem, it provides a robust 
+            foundation for big data analytics workflows.
+          </p>
+
+          <h4 style="margin-top: 1.5rem;">Capabilities</h4>
+          <ul style="padding-left: 1.5rem;">
+            <li>Multi-terabyte data ingestion</li>
+            <li>Distributed processing with Spark</li>
+            <li>SQL-like queries with Hive</li>
+            <li>Schema evolution support</li>
+            <li>Integration with data warehouses</li>
+            <li>Data quality validation pipelines</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>💻 Technical Implementation</h3>
+          
+          <h4>Infrastructure</h4>
+          <p style="color: #6b7280;">WSL Ubuntu Environment with Hadoop Cluster</p>
+          
+          <h4>Data Processing</h4>
+          <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
+            <li>Apache Hadoop (HDFS)</li>
+            <li>Apache Hive (Data Warehouse)</li>
+            <li>Apache Spark (Processing)</li>
+            <li>Python (ETL Scripts)</li>
+          </ul>
+          
+          <h4>Use Cases</h4>
+          <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
+            <li>Log file analysis</li>
+            <li>Time-series data storage</li>
+            <li>Data lake architecture</li>
+            <li>Batch processing workflows</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Cleaning Pipeline Project -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Monitoring Data Pipeline</h2>
+      <p class="text-center" style="max-width: 700px; margin: 0 auto 3rem;">
+        Python-based data cleaning and transformation pipeline with comprehensive testing
+      </p>
+
+      <div class="card" style="max-width: 800px; margin: 0 auto;">
+        <h3>📊 Project Overview</h3>
+        <p>
+          A production-grade data cleaning pipeline designed to process years of monitoring data. 
+          This project demonstrates best practices in data quality, testing, and maintainability.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+          <div>
+            <h4>Key Features</h4>
+            <ul style="padding-left: 1.5rem;">
+              <li>Automated data validation</li>
+              <li>Missing value handling</li>
+              <li>Outlier detection</li>
+              <li>Data type standardization</li>
+              <li>Incremental processing</li>
+              <li>Error logging and reporting</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Technologies</h4>
+            <ul style="padding-left: 1.5rem;">
+              <li>Python 3.x</li>
+              <li>Pandas for data manipulation</li>
+              <li>Pytest for unit testing</li>
+              <li>Great Expectations (validation)</li>
+              <li>Logging and monitoring</li>
+              <li>CI/CD integration</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin-top: 2rem;">
+          <h4>Quality Assurance</h4>
+          <p style="margin-top: 0.5rem;">
+            ✓ Comprehensive unit test coverage<br/>
+            ✓ Automated testing in CI/CD pipeline<br/>
+            ✓ Data quality metrics and reporting<br/>
+            ✓ Documentation and code comments
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Projects Grid -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">Additional Projects & Capabilities</h2>
+      
+      <div class="card-grid" style="margin-top: 3rem;">
+        <div class="card">
+          <h3>📈 Time Series Analysis</h3>
+          <p>Multi-year monitoring data analysis with trend forecasting and anomaly detection.</p>
+          <p style="color: #6b7280; font-size: 0.875rem; margin-top: 1rem;">
+            Python • Pandas • Scikit-learn • Statsmodels
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🎨 Power BI Dashboards</h3>
+          <p>Interactive dashboards for business intelligence and operational monitoring.</p>
+          <p style="color: #6b7280; font-size: 0.875rem; margin-top: 1rem;">
+            Power BI • DAX • Data Modeling
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🔗 API Development</h3>
+          <p>RESTful APIs with FastAPI for data access and integrations.</p>
+          <p style="color: #6b7280; font-size: 0.875rem; margin-top: 1rem;">
+            FastAPI • PostgreSQL • Redis • OpenAPI
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🧪 Data Science Projects</h3>
+          <p>Statistical analysis, predictive modeling, and machine learning implementations.</p>
+          <p style="color: #6b7280; font-size: 0.875rem; margin-top: 1rem;">
+            Python • R • Jupyter • Scikit-learn
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>Want to Build Something Similar?</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        Let's discuss how we can apply these proven solutions to your project.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/contact" class="btn btn-primary">Start a Conversation</a>
+        <a href="/services" class="btn btn-secondary">View Services</a>
+      </div>
+    </div>
+  </section>
+</Layout>
