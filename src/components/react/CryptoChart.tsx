@@ -26,7 +26,7 @@ export default function CryptoChart({ symbol = 'BTC' }: Props) {
       try {
         setLoading(true);
         const response = await fetch(
-          `http://192.168.1.156/api/crypto/${symbol}?limit=30`,
+          `https://queryforge.ai/api/crypto/${symbol}?limit=30`,
           {
             method: 'GET',
             headers: {

@@ -26,7 +26,7 @@ export default function StockTicker({ symbol = 'AAPL', refreshInterval = 300000 
   const fetchStockData = async () => {
     try {
       const response = await fetch(
-        `http://192.168.1.156/api/stock/${symbol}?limit=30`,
+        `https://queryforge.ai/api/stock/${symbol}?limit=30`,
         {
           method: 'GET',
           headers: {
