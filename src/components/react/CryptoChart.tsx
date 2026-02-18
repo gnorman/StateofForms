@@ -98,11 +98,17 @@ export default function CryptoChart({ symbol = 'BTC' }: Props) {
       <div className="price-range">
         <div className="range-item">
           <span className="label">High</span>
-          <span className="value">${latestPrice.high.toFixed(2)}</span>
+          <span className="value">${latestPrice.high.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}</span>
         </div>
         <div className="range-item">
           <span className="label">Low</span>
-          <span className="value">${latestPrice.low.toFixed(2)}</span>
+          <span className="value">${latestPrice.low.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}</span>
         </div>
       </div>
 

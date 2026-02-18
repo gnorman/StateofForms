@@ -102,12 +102,18 @@ export default function StockTicker({ symbol = 'AAPL', refreshInterval = 300000 
       </div>
       
       <div className="stock-price">
-        <span className="current-price">${latestPrice.close.toFixed(2)}</span>
+        <span className="current-price">${latestPrice.close.toLocaleString(undefined, {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        })}</span>
       </div>
       
       <div className={`stock-change ${isPositive ? 'positive' : 'negative'}`}>
         <span className="change-amount">
-          {isPositive ? '▲' : '▼'} ${Math.abs(change).toFixed(2)}
+          {isPositive ? '▲' : '▼'} ${Math.abs(change).toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}
         </span>
         <span className="change-percent">
           ({isPositive ? '+' : ''}{changePercent}%)
@@ -117,15 +123,24 @@ export default function StockTicker({ symbol = 'AAPL', refreshInterval = 300000 
       <div className="stock-details">
         <div className="detail-row">
           <span className="label">Open:</span>
-          <span className="value">${latestPrice.open.toFixed(2)}</span>
+          <span className="value">${latestPrice.open.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}</span>
         </div>
         <div className="detail-row">
           <span className="label">High:</span>
-          <span className="value">${latestPrice.high.toFixed(2)}</span>
+          <span className="value">${latestPrice.high.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}</span>
         </div>
         <div className="detail-row">
           <span className="label">Low:</span>
-          <span className="value">${latestPrice.low.toFixed(2)}</span>
+          <span className="value">${latestPrice.low.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}</span>
         </div>
         <div className="detail-row">
           <span className="label">Volume:</span>
