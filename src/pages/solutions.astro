@@ -16,7 +16,7 @@ import CryptoChart from '../components/react/CryptoChart';
   <!-- Financial Services Solution -->
   <section class="section">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
         <div>
           <h2>📈 Financial Services Analytics</h2>
           <p style="font-size: 1.125rem; margin-bottom: 1.5rem;">
@@ -52,14 +52,15 @@ import CryptoChart from '../components/react/CryptoChart';
             <li>Fast, cached responses with Redis</li>
             <li>Production-ready with CI/CD</li>
           </ul>
-          
-          <div style="background: #f3f4f6; padding: 2rem; border-radius: 0.5rem; margin-top: 1.5rem;">
-            <p style="text-align: center; color: #6b7280; font-weight: 600; margin-bottom: 1rem;">📊 Live Financial Data Demo</p>
-            <div style="display: grid; gap: 1rem;">
-              <StockTicker client:load symbol="AAPL" />
-              <CryptoChart client:visible symbol="BTC" />
-            </div>
-          </div>
+        </div>
+      </div>
+
+      <!-- Live Demo Section -->
+      <div style="margin-top: 3rem;">
+        <h3 style="text-align: center; margin-bottom: 2rem;">📊 Live Financial Data Demo</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1200px; margin: 0 auto;">
+          <StockTicker client:load symbol="AAPL" />
+          <CryptoChart client:visible symbol="BTC" />
         </div>
       </div>
     </div>
