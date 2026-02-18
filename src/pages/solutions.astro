@@ -52,15 +52,15 @@ import CryptoChart from '../components/react/CryptoChart';
             <li>Fast, cached responses with Redis</li>
             <li>Production-ready with CI/CD</li>
           </ul>
-        </div>
-      </div>
-
-      <!-- Live Demo Section -->
-      <div style="margin-top: 3rem;">
-        <h3 style="text-align: center; margin-bottom: 2rem;">📊 Live Financial Data Demo</h3>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1200px; margin: 0 auto;">
-          <StockTicker client:load symbol="AAPL" />
-          <CryptoChart client:visible symbol="BTC" />
+          
+          <!-- Live Demo Section -->
+          <div style="margin-top: 2rem;">
+            <h4 style="font-size: 1rem; margin-bottom: 1rem;">📊 Live Financial Data Demo</h4>
+            <div style="display: grid; gap: 1rem;">
+              <StockTicker client:load symbol="AAPL" />
+              <CryptoChart client:visible symbol="BTC" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
