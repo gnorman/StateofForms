@@ -94,6 +94,11 @@ export default function StockTicker({ symbol = 'AAPL', refreshInterval = 300000 
     : '0.00';
   const isPositive = change >= 0;
 
+  // Calculate sparkline data
+  const maxPrice = Math.max(...stockData.data.map(d => d.high));
+  const minPrice = Math.min(...stockData.data.map(d => d.low));
+  const priceRange = maxPrice - minPrice;
+
   return (
     <div className="stock-ticker">
       <div className="stock-header">
@@ -147,9 +152,35 @@ export default function StockTicker({ symbol = 'AAPL', refreshInterval = 300000 
           <span className="value">{latestPrice.volume.toLocaleString()}</span>
         </div>
       </div>
+
+      <div className="sparkline">
+        {stockData.data.map((point, index) => {
+          const height = priceRange > 0 
+            ? ((point.close - minPrice) / priceRange) * 100 
+            : 50;
+          return (
+            <div
+              key={index}
+              className="sparkline-bar"
+              style={{
+                height: `${height}%`,
+                backgroundColor: isPositive ? '#10b981' : '#ef4444',
+              }}
+              title={`${point.date}: $${point.close.toLocaleString(undefined, {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+              })}`}
+            />
+          );
+        })}
+      </div>
       
       <div className="stock-date">
         Last updated: {new Date(latestPrice.date).toLocaleString()}
+      </div>
+
+      <div className="chart-footer">
+        <small>Powered by QueryForge</small>
       </div>
     </div>
   );
