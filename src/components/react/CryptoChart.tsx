@@ -136,7 +136,7 @@ export default function CryptoChart({ symbol = 'BTC' }: Props) {
       </div>
 
       <div className="chart-footer">
-        <small>Powered by QueryForge</small>
+        <small>Powered by queryForge</small>
       </div>
     </div>
   );

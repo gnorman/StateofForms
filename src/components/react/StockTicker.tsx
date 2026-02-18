@@ -180,7 +180,7 @@ export default function StockTicker({ symbol = 'AAPL', refreshInterval = 300000 
       </div>
 
       <div className="chart-footer">
-        <small>Powered by QueryForge</small>
+        <small>Powered by queryForge</small>
       </div>
     </div>
   );
