@@ -56,7 +56,7 @@ import CryptoChart from '../components/react/CryptoChart';
           <!-- Live Demo Section -->
           <div style="margin-top: 2rem;">
             <h4 style="font-size: 1rem; margin-bottom: 1rem;">📊 Live Financial Data Demo</h4>
-            <div style="display: grid; gap: 1rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; transform: scale(0.85); transform-origin: top center;">
               <StockTicker client:load symbol="AAPL" />
               <CryptoChart client:visible symbol="BTC" />
             </div>
