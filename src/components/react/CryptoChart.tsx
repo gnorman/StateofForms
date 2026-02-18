@@ -85,7 +85,7 @@ export default function CryptoChart({ symbol = 'BTC' }: Props) {
 
       <div className="crypto-price-display">
         <div className="current-price">
-          \${latestPrice.close.toLocaleString(undefined, {
+          ${latestPrice.close.toLocaleString(undefined, {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
           })}
@@ -129,6 +129,10 @@ export default function CryptoChart({ symbol = 'BTC' }: Props) {
             />
           );
         })}
+      </div>
+
+      <div className="crypto-date">
+        Last updated: {new Date(latestPrice.date).toLocaleString()}
       </div>
 
       <div className="chart-footer">

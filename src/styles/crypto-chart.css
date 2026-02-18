@@ -97,6 +97,13 @@
   opacity: 0.7;
 }
 
+.crypto-date {
+  text-align: center;
+  font-size: 0.875rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
 .chart-footer {
   text-align: center;
   opacity: 0.7;
