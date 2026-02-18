@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import StockTicker from '../components/react/StockTicker';
+import CryptoChart from '../components/react/CryptoChart';
 ---
 
 <Layout title="Solutions" description="Industry-specific data solutions for financial services, operations monitoring, and custom analytics">
@@ -44,16 +46,19 @@ import Layout from '../layouts/Layout.astro';
         <div class="card">
           <h3>Results & Benefits</h3>
           <ul style="padding-left: 1.5rem;">
-            <li>▸ Real-time market insights</li>
-            <li>▸ Multiple chart types for analysis</li>
-            <li>▸ RESTful API for integrations</li>
-            <li>▸ Fast, cached responses with Redis</li>
-            <li>▸ Production-ready with CI/CD</li>
+            <li>Real-time market insights</li>
+            <li>Multiple chart types for analysis</li>
+            <li>RESTful API for integrations</li>
+            <li>Fast, cached responses with Redis</li>
+            <li>Production-ready with CI/CD</li>
           </ul>
           
           <div style="background: #f3f4f6; padding: 2rem; border-radius: 0.5rem; margin-top: 1.5rem;">
-            <p style="text-align: center; color: #6b7280;">📊 Live Chart Demo</p>
-            <p style="text-align: center; font-size: 0.875rem; color: #9ca3af;">(React component)</p>
+            <p style="text-align: center; color: #6b7280; font-weight: 600; margin-bottom: 1rem;">📊 Live Financial Data Demo</p>
+            <div style="display: grid; gap: 1rem;">
+              <StockTicker client:load symbol="AAPL" />
+              <CryptoChart client:visible symbol="BTC" />
+            </div>
           </div>
         </div>
       </div>
@@ -67,11 +72,11 @@ import Layout from '../layouts/Layout.astro';
         <div class="card">
           <h3>Key Features</h3>
           <ul style="padding-left: 1.5rem;">
-            <li>▸ Multi-year historical analysis</li>
-            <li>▸ Anomaly detection algorithms</li>
-            <li>▸ Custom alerting rules</li>
-            <li>▸ Trend forecasting</li>
-            <li>▸ Performance dashboards</li>
+            <li>Multi-year historical analysis</li>
+            <li>Anomaly detection algorithms</li>
+            <li>Custom alerting rules</li>
+            <li>Trend forecasting</li>
+            <li>Performance dashboards</li>
           </ul>
           
           <div style="background: #f3f4f6; padding: 2rem; border-radius: 0.5rem; margin-top: 1.5rem;">
@@ -158,10 +163,10 @@ import Layout from '../layouts/Layout.astro';
           
           <h4 style="margin-top: 1.5rem;">Benefits</h4>
           <ul style="padding-left: 1.5rem;">
-            <li>▸ Scalable to petabyte-scale data</li>
-            <li>▸ Data quality assurance built-in</li>
-            <li>▸ Fast query performance</li>
-            <li>▸ Cost-optimized storage</li>
+            <li>Scalable to petabyte-scale data</li>
+            <li>Data quality assurance built-in</li>
+            <li>Fast query performance</li>
+            <li>Cost-optimized storage</li>
           </ul>
         </div>
       </div>
