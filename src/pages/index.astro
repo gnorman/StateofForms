@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import StockTicker from '../components/react/StockTicker';
+import CryptoChart from '../components/react/CryptoChart';
 ---
 
 <Layout title="Home" description="State of Forms - Transform Data Into Decisions. Data Analytics & Engineering Solutions">
@@ -63,10 +65,10 @@ import Layout from '../layouts/Layout.astro';
         <h3>Live Financial Data Analytics</h3>
         <p>Powered by OpenBB API • Django • FastAPI • PostgreSQL • Redis</p>
         
-        <!-- Placeholder for React component -->
-        <div style="background: #f3f4f6; padding: 3rem; border-radius: 0.5rem; margin: 2rem 0;">
-          <p style="color: #6b7280;">📈 Live Stock & Crypto Charts Will Display Here</p>
-          <p style="font-size: 0.875rem; color: #9ca3af;">(React component to be integrated)</p>
+        <!-- Live React Components -->
+        <div class="card-grid" style="margin: 2rem 0;">
+          <StockTicker client:load symbol="AAPL" />
+          <CryptoChart client:visible symbol="BTC" />
         </div>
         
         <div style="margin-top: 2rem;">
