@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import StockTicker from '../components/react/StockTicker';
+import CryptoChart from '../components/react/CryptoChart';
 ---
 
 <Layout title="Portfolio" description="Our data analytics and engineering projects featuring queryForge, QueryLane, and custom solutions">
@@ -77,11 +79,9 @@ import Layout from '../layouts/Layout.astro';
         <h3>Live Financial Data Demo</h3>
         <p>See queryForge in action with real-time market data</p>
         
-        <div style="background: #f3f4f6; padding: 4rem; border-radius: 0.5rem; margin: 2rem 0;">
-          <p style="color: #6b7280; font-size: 1.25rem;">📈 Interactive Stock & Crypto Charts</p>
-          <p style="font-size: 0.875rem; color: #9ca3af; margin-top: 1rem;">
-            React component with live data will be integrated here
-          </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+          <StockTicker client:load symbol="AAPL" />
+          <CryptoChart client:visible symbol="BTC" />
         </div>
       </div>
     </div>
