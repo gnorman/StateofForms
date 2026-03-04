@@ -22,7 +22,7 @@ import Layout from '../layouts/Layout.astro';
             Fill out the form below and we'll get back to you within 24 hours.
           </p>
 
-          <form action="#" method="POST" style="max-width: 500px;">
+          <form id="contact-form" action="#" method="POST" style="max-width: 500px;">
             <div class="form-group">
               <label for="name">Name *</label>
               <input 
@@ -96,6 +96,10 @@ import Layout from '../layouts/Layout.astro';
               </button>
             </div>
 
+            <div id="form-success" style="display:none; background:#d1fae5; border:1px solid #6ee7b7; border-radius:8px; padding:1rem; color:#065f46; margin-top:1rem;">
+              ✅ Your message has been prepared — your email client should open shortly.
+            </div>
+
             <p style="font-size: 0.875rem; color: #6b7280; margin-top: 1rem;">
               * Required fields
             </p>
@@ -127,10 +131,10 @@ import Layout from '../layouts/Layout.astro';
             <div style="margin-bottom: 1.5rem;">
               <h4 style="color: #2563eb; margin-bottom: 0.5rem;">🔗 Connect With Us</h4>
               <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
-                <a href="#" target="_blank" rel="noopener" class="btn btn-secondary" style="text-decoration: none;">
+                <a href="https://linkedin.com/in/gregory-norman/" target="_blank" rel="noopener" class="btn btn-secondary" style="text-decoration: none;">
                   LinkedIn
                 </a>
-                <a href="#" target="_blank" rel="noopener" class="btn btn-secondary" style="text-decoration: none;">
+                <a href="https://github.com/gnorm" target="_blank" rel="noopener" class="btn btn-secondary" style="text-decoration: none;">
                   GitHub
                 </a>
               </div>
@@ -240,3 +244,36 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 </Layout>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const name    = data.get('name')    || '';
+      const email   = data.get('email')   || '';
+      const company = data.get('company') || '';
+      const service = data.get('service') || '';
+      const budget  = data.get('budget')  || '';
+      const message = data.get('message') || '';
+
+      const body = [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        company ? `Company: ${company}` : '',
+        service ? `Service Interest: ${service}` : '',
+        budget  ? `Budget Range: ${budget}` : '',
+        ``,
+        `Project Description:`,
+        `${message}`,
+      ].filter(Boolean).join('\n');
+
+      const mailto = `mailto:info@stateofforms.com?subject=${encodeURIComponent('State of Forms Request')}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+
+      const success = document.getElementById('form-success');
+      if (success) success.style.display = 'block';
+    });
+  }
+</script>
